@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "slack-bot"
+version = "0.1.0"
+description = ""
+authors = ["greenpea88 <green_pea88@naver.com>"]
+packages = [{ include = "thor" }]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+slack-sdk = "^3.13.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

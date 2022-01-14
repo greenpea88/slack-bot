@@ -1,0 +1,22 @@
+[[package]]
+name = "slack-sdk"
+version = "3.13.0"
+description = "The Slack API Platform SDK for Python"
+category = "main"
+optional = false
+python-versions = ">=3.6.0"
+
+[package.extras]
+optional = ["aiodns (>1.0)", "aiohttp (>=3.7.3,<4)", "boto3 (<=2)", "SQLAlchemy (>=1,<2)", "websockets (>=10,<11)", "websocket-client (>=1,<2)"]
+testing = ["pytest (>=6.2.5,<7)", "pytest-asyncio (<1)", "Flask-Sockets (>=0.2,<1)", "Flask (>=1,<2)", "Werkzeug (<2)", "pytest-cov (>=2,<3)", "codecov (>=2,<3)", "flake8 (>=4,<5)", "black (==21.12b0)", "psutil (>=5,<6)", "databases (>=0.3)", "boto3 (<=2)", "moto (<2)"]
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.9"
+content-hash = "54d38b7f2e1373e3188b79ea2b083cbf13fc57158529d2d0df001acdd998c249"
+
+[metadata.files]
+slack-sdk = [
+    {file = "slack_sdk-3.13.0-py2.py3-none-any.whl", hash = "sha256:54f2a5f7419f1ab932af9e3200f7f2f93db96e0f0eb8ad7d3b4214aa9f124641"},
+    {file = "slack_sdk-3.13.0.tar.gz", hash = "sha256:aae6ce057e286a5e7fe7a9f256e85b886eee556def8e04b82b08f699e64d7f67"},
+]
