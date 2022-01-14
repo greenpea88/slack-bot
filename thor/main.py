@@ -21,8 +21,25 @@ def post_message():
       }
     }
   }]
-  response = client.chat_postMessage(channel='bot-test', blocks=blocks)
+  response = client.chat_postMessage(channel='#bot-test', blocks=blocks)
 
+def post_image():
+  blocks = [
+    {
+      "type": "image",
+      "title": {
+        "type": "plain_text",
+        "text": "ANOTHER!!"
+      },
+      "block_id": "image4",
+      "image_url": "",
+      "alt_text": "An incredibly cute kitten."
+    }
+  ]
+
+  result = client.chat_postMessage(channel="#bot-test", blocks=blocks)
+
+  return result
 
 def post_message_to_thread():
     res = client.conversations_list()
@@ -49,5 +66,5 @@ def post_message_to_thread():
 
 
 if __name__ == "__main__":
-  res = post_message_to_thread()
-  print(res)
+  # res = post_message_to_thread()
+  res = post_image()
